@@ -47,7 +47,7 @@ public class GameTest {
 	}
 
 	@Test
-	void testAttackShouldReduceLifePointsWhenAttackerHitsDefender() {
+	void testAttack() {
 		// criação dos jogadores e lutadores
 		Fighter fighter1 = new Zangief("Zangief", 100.0, 10.0, new Special("Spinning Piledriver", 50.0));
 		Fighter fighter2 = new Guile("Guile", 100.0, 10.0, new Special("Sonic Boom", 50.0));

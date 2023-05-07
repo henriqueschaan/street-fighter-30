@@ -7,12 +7,15 @@ public class Game {
 	private Player player1;
 	private Player player2;
 
-	public void startGameForTwoPlayers(Player player1, Player player2) {
-		this.player1 = player1;
-		this.player2 = player2;
+	public void startGameForTwoPlayers(Player p1, Player p2) {
+		
+		player1 = p1;
+		player2 = p2;
 
 		Random random = new Random();
-
+		
+		System.out.println("Game started!\n");
+		
 		while (bothAlive()) {
 			attack(player1, player2);
 			if (bothAlive())
@@ -22,6 +25,9 @@ public class Game {
 			if (bothAlive() && random.nextBoolean())
 				special(player2, player1);
 		}
+		
+		System.out.println("\n\nGame ended!\n\n-----\n");
+		
 	}
 
 	public boolean bothAlive() {
