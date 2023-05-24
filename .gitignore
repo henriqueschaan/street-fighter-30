@@ -52,7 +52,6 @@ out/
 bin/
 tmp/
 .metadata
-.classpath
 *.tmp
 *.bak
 *.swp
